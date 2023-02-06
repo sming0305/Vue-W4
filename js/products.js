@@ -15,7 +15,8 @@ const app = {
             products: {},
             productTemplate: {
                 data: {
-                    imagesUrl: []
+                    imagesUrl: [],
+                    num:1
                 }
             },
             pagination:{},
