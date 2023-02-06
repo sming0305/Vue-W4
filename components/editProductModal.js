@@ -105,15 +105,17 @@ export default {
             let method = "";
             this.modalStatus === "new" ? method = "post" : method = "put";
 
-            axios[method](`${apiUrl}/v2/api/${apiPath}/admin/product/${this.productId}`,this.productTemplate)
-                .then(res => {
-                    this.$emit("refresh")
-                    this.$emit("closeModal","edit")
-                    alert(res.data.message)
-                })
-                .catch(err => {
-                    alert(err.data.message)
-                })
+            console.log(this.productTemplate)
+
+            // axios[method](`${apiUrl}/v2/api/${apiPath}/admin/product/${this.productId}`,this.productTemplate)
+            //     .then(res => {
+            //         this.$emit("refresh")
+            //         this.$emit("closeModal","edit")
+            //         alert(res.data.message)
+            //     })
+            //     .catch(err => {
+            //         alert(err.data.message)
+            //     })
         }
     }
 }

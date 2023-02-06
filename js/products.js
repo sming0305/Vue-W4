@@ -16,10 +16,9 @@ const app = {
             productTemplate: {
                 data: {
                     imagesUrl: [],
-                    num:1
                 }
             },
-            pagination:{},
+            pagination: {},
             modalStatus: "",
             productId: "",
             delProductTitle: ""
@@ -58,7 +57,7 @@ const app = {
             this.modalStatus = modal
 
             if (this.modalStatus === "new") {
-                this.productTemplate = { data: { imagesUrl: [] } }
+                this.productTemplate = { data: { imagesUrl: [], num: 1 } }
                 this.productId = ""
                 productModal.show()
             } else if (this.modalStatus === "edit") {
